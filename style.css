@@ -425,6 +425,28 @@ nav a:hover, nav a.active {
     gap: 2rem;
     flex-wrap: wrap;
 }
+
+/* About layout */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.about-merge {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+    flex: 1;
+}
+.about-right {
+    flex: 0 0 45%;
+}
+
 .services-left {
     flex: 1;
 }
@@ -441,6 +463,16 @@ nav a:hover, nav a.active {
     border-radius: var(--border-radius);
     object-fit: cover;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-img {
+    width: 100%;
+    max-width: 45%;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: block;
+    margin: 0 auto;
 }
 
 .tech-card {
