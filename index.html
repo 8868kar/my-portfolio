@@ -1,308 +1,1031 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kartik - Back-End Developer</title>
-    <!-- Google Fonts -->
+    <title>Kartik Karnwal — Full-Stack GenAI Developer & VibeCoder</title>
+    <meta name="description" content="Portfolio of Kartik Karnwal — Full-Stack GenAI Developer building production-ready AI applications, SaaS platforms, and scalable web solutions.">
+
+    <!-- Fonts: Bricolage Grotesque (Bold editorial display) + Gaegu (Handwritten) + Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;500;600;700;800&family=Gaegu:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- BACKGROUND GRAIN & GLOW OVERLAY -->
+    <div class="bg-noise" aria-hidden="true"></div>
+    <div class="glow-orb orb-1" aria-hidden="true"></div>
+    <div class="glow-orb orb-2" aria-hidden="true"></div>
 
-    <!-- SIDEBAR SOCIAL LINKS -->
-    <div class="social-sidebar">
-        <a href="https://github.com/8868kar" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/kartik-karnwal07/?skipRedirect=true" target="_blank"><i
-                class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:kartikkarnwal07@gmail.com"><i class="fas fa-envelope"></i></a>
-    </div>
-
-    <!-- MAIN CONTAINER -->
-    <div class="container">
-
-        <!-- HEADER -->
-        <header>
-            <div class="logo">
-                <div class="logo-img">K</div>
-                <div class="logo-text">
-                    <span class="name">Kartik</span>
-                    <span class="role">Developer</span>
+    <!-- TOP FLOATING HEADER BAR -->
+    <header class="top-bar">
+        <div class="top-bar-inner">
+            <a href="#home" class="brand-chip" aria-label="Kartik Karnwal Home">
+                <div class="avatar-ring">
+                    <img src="images/profile1.jpg.png" alt="Kartik" class="brand-avatar">
                 </div>
-            </div>
+                <div class="brand-info">
+                    <span class="brand-name">Kartik Karnwal</span>
+                    <span class="brand-tag"><span class="pulse-dot"></span> VibeCoder • GenAI</span>
+                </div>
+            </a>
 
-            <nav>
-                <ul>
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
+            <div class="top-actions">
+                <div class="status-pill hide-mobile">
+                    <span class="online-indicator"></span>
+                    <span>Open to Work & Collaborations</span>
+                </div>
 
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+                <!-- Theme Toggle Button -->
+                <button id="themeToggle" class="icon-btn theme-switch" aria-label="Toggle dark/light mode" title="Toggle theme">
+                    <span class="sun-icon"><i class="fas fa-sun"></i></span>
+                    <span class="moon-icon"><i class="fas fa-moon"></i></span>
+                </button>
 
-            <div class="header-action">
-                <a href="#contact" class="btn btn-outline">
-                    <span class="status-dot"></span> Open to work
+                <a href="#contact" class="btn-top-cta">
+                    <span>Let's Talk</span>
+                    <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <!-- HERO SECTION -->
-        <section id="home" class="hero">
-            <div class="hero-image-container">
-                <div class="hero-backdrop"></div>
-                <!-- Profile image 1 -->
-                <img src="images/profile1.jpg.png" alt="Kartik" class="hero-img">
-                <div class="chat-bubble">hello! 👋</div>
+    <!-- MAIN WRAPPER -->
+    <main class="content-wrapper">
+
+        <!-- 1. HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-left">
+                    <div class="greeting-badge">
+                        <span class="hand-wave">👋</span>
+                        <span class="handwritten-text">hey there, I'm Kartik!</span>
+                        <span class="badge-mini">Indore / Remote</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Building things that <br>
+                        <span class="brush-hl hl-sun">actually ship</span> & don't break at 3 AM.
+                    </h1>
+
+                    <p class="hero-subtext">
+                        <strong>Full-Stack GenAI Developer & VibeCoder.</strong> I turn ideas into resilient full-stack web platforms, autonomous AI agents, and end-to-end SaaS products from concept to cloud deployment.
+                    </p>
+
+                    <div class="hero-highlights">
+                        <span class="pill-chip"><i class="fas fa-bolt text-yellow"></i> Sub-second AI Workflows</span>
+                        <span class="pill-chip"><i class="fas fa-shield-alt text-blue"></i> Production Auth & RLS</span>
+                        <span class="pill-chip"><i class="fas fa-layer-group text-coral"></i> Modern Scalable Architectures</span>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Selected Work</span>
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="far fa-paper-plane"></i>
+                            <span>Get In Touch</span>
+                        </a>
+                        <a href="mailto:kartikkarnwal07@gmail.com" class="btn btn-ghost" title="Copy Email">
+                            <i class="far fa-envelope"></i>
+                            <span>kartikkarnwal07@gmail.com</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <div class="interactive-photo-card">
+                        <div class="photo-tape"></div>
+                        <div class="photo-frame">
+                            <img src="images/profile1.jpg.png" alt="Kartik Karnwal" class="main-portrait">
+                            <div class="floating-badge badge-role">
+                                <span class="role-icon">⚡</span>
+                                <div>
+                                    <b>GenAI Specialist</b>
+                                    <small>FastAPI • Next.js • LLMs</small>
+                                </div>
+                            </div>
+                            <div class="floating-badge badge-exp">
+                                <span class="role-icon">🚀</span>
+                                <div>
+                                    <b>6+ Live Projects</b>
+                                    <small>SaaS, ML & Web3</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo-caption handwritten-text">
+                            "Coding with vibe, shipping with precision ✨"
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="hero-content">
-                <h1><span class="text-primary">VIBE</span> CODER</h1>
-                <p>VIbecoder whose Building AI-powered web applications from concept to deployment. Specialized in
-                    Full-Stack Development, GenAI Integration, Authentication, APIs, Databases, and scalable cloud
-                    solutions.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch <i class="fas fa-arrow-right"></i></a>
+            <!-- SCROLL CUE -->
+            <a href="#story" class="scroll-cue" aria-label="Scroll down">
+                <span class="mouse-icon"><span class="mouse-wheel"></span></span>
+                <span class="scroll-cue-text">Scroll to explore my world</span>
+            </a>
+        </section>
+
+        <!-- 2. STORY / PHILOSOPHY WITH STICKY NOTES -->
+        <section id="story" class="story-section">
+            <div class="container">
+                <div class="sec-label">
+                    <span class="kicker-tag"><i class="fas fa-compass"></i> HOW I GOT HERE</span>
+                    <h2 class="sec-title">From pure curiosity to <span class="brush-hl hl-sky">shipping products</span>.</h2>
+                </div>
+
+                <div class="story-grid">
+                    <div class="story-lead-card">
+                        <p class="lead-text">
+                            I began as a builder asking <em>"what happens behind the screen?"</em>. I wrote code, tested scripts, and became obsessed with turning lines of logic into interfaces people use everyday.
+                        </p>
+                        <p class="lead-text">
+                            When generative AI transformed software, I dove straight in — mastering <span class="brush-hl hl-lilac">LLM integrations, retrieval systems (RAG), and agentic workflows</span>. Today, I don't just build UI; I architect full-stack applications with robust databases, reliable authentication, and rock-solid APIs.
+                        </p>
+
+                        <div class="stats-ribbon">
+                            <div class="stat-item">
+                                <span class="stat-num">6+</span>
+                                <span class="stat-label">Production Apps</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <span class="stat-num">100%</span>
+                                <span class="stat-label">Full-Stack Coverage</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <span class="stat-num">&lt;2s</span>
+                                <span class="stat-label">AI Query Turnaround</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PLAYFUL ROTATING STICKY NOTES -->
+                    <div class="sticky-notes-cluster">
+                        <div class="sticky-note note-yellow">
+                            <div class="tape"></div>
+                            <span class="note-pin"><i class="fas fa-thumbtack"></i></span>
+                            <h4 class="handwritten-text">The Vibe Philosophy</h4>
+                            <p>Build fast, validate continuously, and obsess over user experience until it feels seamless.</p>
+                            <span class="note-tag">#CodeWithPassion</span>
+                        </div>
+
+                        <div class="sticky-note note-coral">
+                            <div class="tape"></div>
+                            <span class="note-pin"><i class="fas fa-thumbtack"></i></span>
+                            <h4 class="handwritten-text">What I Specialize In</h4>
+                            <ul class="clean-check-list">
+                                <li>✨ GenAI & Agentic Workflows</li>
+                                <li>🔒 OAuth & JWT Security</li>
+                                <li>⚡ Scalable REST Backends</li>
+                            </ul>
+                        </div>
+
+                        <div class="sticky-note note-blue">
+                            <div class="tape"></div>
+                            <span class="note-pin"><i class="fas fa-thumbtack"></i></span>
+                            <h4 class="handwritten-text">Currently Cooking</h4>
+                            <p>Next-gen legal intelligence with <b>Vakeely AI</b> and high-speed predictive ML pipelines.</p>
+                            <span class="note-tag">#AlwaysShipping</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- SERVICES SECTION -->
-        <section id="services" class="services section-padding">
-            <div class="section-header">
-                <span class="section-tag">SERVICES</span>
-                <h2>What I Do</h2>
-            </div>
-            <div class="services-content">
-                <div class="services-left">
-                    <p class="about-merge">I'm a Full-Stack GenAI Developer passionate about building modern web
-                        applications that combine powerful backend systems with intuitive user experiences. I specialize
-                        in end‑to‑end solutions, including AI integrations, authentication, database design, API
-                        development, cloud deployment, and scalable architectures.</p>
-                    <ul class="services-list">
-                        <li>✅ Full-Stack Web Development</li>
-                        <li>✅ GenAI Integration &amp; AI Agents</li>
-                        <li>✅ REST API &amp; Backend Development</li>
-                        <li>✅ Authentication &amp; Security (Google OAuth, JWT)</li>
-                        <li>✅ Database Design &amp; Management (MongoDB, PostgreSQL)</li>
-                        <li>✅ Cloud Deployment &amp; DevOps</li>
-                        <li>✅ SaaS Product Development</li>
-                        <li>✅ Event &amp; Community Platforms</li>
-                    </ul>
+        <!-- 3. SERVICES / CAPABILITIES SECTION -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="sec-label center">
+                    <span class="kicker-tag"><i class="fas fa-cogs"></i> WHAT I BRING TO THE TABLE</span>
+                    <h2 class="sec-title">Full-Stack power with an <span class="brush-hl hl-coral">AI-first engine</span>.</h2>
+                    <p class="sec-subtitle">From user research to database schemas and production deployments, here is how I build value.</p>
                 </div>
-                <div class="services-right">
-                    <img src="images/kartikimage.png" alt="Profile 2" class="services-profile-img" />
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon-box bg-sun-light">
+                            <i class="fas fa-brain text-yellow"></i>
+                        </div>
+                        <h3>GenAI Integration & Agents</h3>
+                        <p>Autonomous LLM pipelines, prompt engineering, RAG memory systems, document parsing, and Groq/OpenAI sub-second inference engines.</p>
+                        <div class="card-pills">
+                            <span>OpenAI</span>
+                            <span>Groq</span>
+                            <span>RAG</span>
+                            <span>Prompt Ops</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon-box bg-sky-light">
+                            <i class="fas fa-code text-blue"></i>
+                        </div>
+                        <h3>Full-Stack Web Development</h3>
+                        <p>Crafting modern, responsive SPAs and full-stack platforms using React, Next.js, and Node.js with pixel-perfect attention to detail.</p>
+                        <div class="card-pills">
+                            <span>React</span>
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>Tailwind</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon-box bg-coral-light">
+                            <i class="fas fa-server text-coral"></i>
+                        </div>
+                        <h3>API & Backend Engineering</h3>
+                        <p>Designing RESTful and real-time APIs with Node.js/Express and Python/FastAPI, built with rate-limiting, error handling, and webhooks.</p>
+                        <div class="card-pills">
+                            <span>Express</span>
+                            <span>Python</span>
+                            <span>REST</span>
+                            <span>WebSockets</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon-box bg-mint-light">
+                            <i class="fas fa-database text-green"></i>
+                        </div>
+                        <h3>Databases & Architecture</h3>
+                        <p>Relational and NoSQL database modeling with MongoDB and PostgreSQL, implementing Row-Level Security, migrations, and caching.</p>
+                        <div class="card-pills">
+                            <span>MongoDB</span>
+                            <span>PostgreSQL</span>
+                            <span>Supabase</span>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon-box bg-lilac-light">
+                            <i class="fas fa-user-shield text-purple"></i>
+                        </div>
+                        <h3>Authentication & Security</h3>
+                        <p>Zero-compromise identity workflows including Google OAuth 2.0, JWT session rotation, OTP validation, and role-based access control (RBAC).</p>
+                        <div class="card-pills">
+                            <span>OAuth 2.0</span>
+                            <span>JWT</span>
+                            <span>RBAC</span>
+                            <span>OTP</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon-box bg-caramel-light">
+                            <i class="fas fa-rocket text-dark"></i>
+                        </div>
+                        <h3>SaaS & Product Launch</h3>
+                        <p>End-to-end product development from wireframes to cloud hosting on Vercel, integrating payments (Razorpay/Stripe) and analytics.</p>
+                        <div class="card-pills">
+                            <span>SaaS</span>
+                            <span>Vercel</span>
+                            <span>Razorpay</span>
+                            <span>CI/CD</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- 4. SELECTED WORK / PROJECTS WITH INTERACTIVE FILTER -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="projects-header-flex">
+                    <div class="sec-label">
+                        <span class="kicker-tag"><i class="fas fa-folder-open"></i> SELECTED WORK</span>
+                        <h2 class="sec-title">Things I built, and the <span class="brush-hl hl-sun">problems they solve</span>.</h2>
+                        <p class="sec-subtitle">Real SaaS products, AI systems, and platforms deployed to production.</p>
+                    </div>
 
+                    <!-- Category Filter Pills -->
+                    <div class="filter-pills" id="projectFilters">
+                        <button class="filter-btn active" data-filter="all">All (6)</button>
+                        <button class="filter-btn" data-filter="ai">GenAI & ML</button>
+                        <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+                        <button class="filter-btn" data-filter="saas">SaaS & EdTech</button>
+                    </div>
+                </div>
 
-        <!-- PROJECTS SECTION -->
-        <section id="projects" class="projects section-padding">
-            <div class="section-header">
-                <span class="section-tag">PROJECTS</span>
-                <div class="header-flex">
-                    <h2>Featured Projects</h2>
-                    <a href="#" class="view-all">View all projects <i class="fas fa-arrow-right"></i></a>
+                <div class="projects-grid" id="projectsContainer">
+
+                    <!-- PROJECT 1: Vakeely AI -->
+                    <article class="project-card" data-category="ai saas">
+                        <div class="project-card-inner">
+                            <div class="project-media-wrapper">
+                                <img src="images/VAkeely-Ai legal.png.png" alt="Vakeely AI platform preview" loading="lazy" class="project-img">
+                                <div class="project-overlay">
+                                    <span class="badge-tag bg-tag-coral"><i class="fas fa-gavel"></i> LegalTech • SaaS</span>
+                                    <span class="badge-tag bg-tag-green">Live Demo ↗</span>
+                                </div>
+                            </div>
+
+                            <div class="project-body">
+                                <div class="project-meta-row">
+                                    <span class="project-year">2026 • Flagship Build</span>
+                                    <div class="project-links">
+                                        <a href="https://vakeely-ai.vercel.app" target="_blank" rel="noopener" class="link-circle" title="Open Live Site" aria-label="Visit Vakeely AI">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <a href="https://github.com/8868kar" target="_blank" rel="noopener" class="link-circle" title="View Source on GitHub" aria-label="GitHub Repository">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <h3 class="project-title">
+                                    <a href="https://vakeely-ai.vercel.app" target="_blank" rel="noopener">Vakeely AI — AI-Powered Legal Research & Drafting</a>
+                                </h3>
+
+                                <p class="project-desc">
+                                    An intelligent legaltech platform revolutionizing litigation workflows with instant judgment search, contextual precedent research, automated drafting, and lawyer appointment scheduling.
+                                </p>
+
+                                <div class="project-metric-pill">
+                                    <i class="fas fa-chart-line text-yellow"></i>
+                                    <span>Saves lawyers <b>10+ hours/week</b> in manual case retrieval</span>
+                                </div>
+
+                                <div class="tech-tags">
+                                    <span>GenAI</span>
+                                    <span>LegalTech</span>
+                                    <span>React</span>
+                                    <span>FastAPI</span>
+                                    <span>Vector Search</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 2: ADHD Prediction System -->
+                    <article class="project-card" data-category="ai">
+                        <div class="project-card-inner">
+                            <div class="project-media-wrapper">
+                                <img src="images/adhd.png.png" alt="ADHD Prediction System preview" loading="lazy" class="project-img">
+                                <div class="project-overlay">
+                                    <span class="badge-tag bg-tag-sky"><i class="fas fa-heartbeat"></i> AI/ML • Healthcare</span>
+                                    <span class="badge-tag bg-tag-green">Live Demo ↗</span>
+                                </div>
+                            </div>
+
+                            <div class="project-body">
+                                <div class="project-meta-row">
+                                    <span class="project-year">2026 • HealthTech</span>
+                                    <div class="project-links">
+                                        <a href="https://adhd-prediction-system.vercel.app" target="_blank" rel="noopener" class="link-circle" title="Open Live Site" aria-label="Visit ADHD Prediction System">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <a href="https://github.com/8868kar" target="_blank" rel="noopener" class="link-circle" title="View Source on GitHub" aria-label="GitHub Repository">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <h3 class="project-title">
+                                    <a href="https://adhd-prediction-system.vercel.app" target="_blank" rel="noopener">ADHD Prediction & Early Diagnostic Assistant</a>
+                                </h3>
+
+                                <p class="project-desc">
+                                    AI-powered clinical support platform analyzing multi-modal behavioural questionnaires and response patterns to generate predictive indicators and actionable wellness reports.
+                                </p>
+
+                                <div class="project-metric-pill">
+                                    <i class="fas fa-brain text-blue"></i>
+                                    <span>Predictive scoring algorithm with visual risk profiles</span>
+                                </div>
+
+                                <div class="tech-tags">
+                                    <span>Machine Learning</span>
+                                    <span>Python</span>
+                                    <span>Data Modeling</span>
+                                    <span>Vercel</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 3: Campus Connect -->
+                    <article class="project-card" data-category="fullstack saas">
+                        <div class="project-card-inner">
+                            <div class="project-media-wrapper">
+                                <img src="images/campus.png.png" alt="Campus Connect preview" loading="lazy" class="project-img">
+                                <div class="project-overlay">
+                                    <span class="badge-tag bg-tag-lilac"><i class="fas fa-university"></i> EdTech • Full-Stack</span>
+                                    <span class="badge-tag bg-tag-green">Live Demo ↗</span>
+                                </div>
+                            </div>
+
+                            <div class="project-body">
+                                <div class="project-meta-row">
+                                    <span class="project-year">2026 • Campus Ops</span>
+                                    <div class="project-links">
+                                        <a href="https://campus-connect-sage-eta.vercel.app/" target="_blank" rel="noopener" class="link-circle" title="Open Live Site" aria-label="Visit Campus Connect">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <a href="https://github.com/8868kar" target="_blank" rel="noopener" class="link-circle" title="View Source on GitHub" aria-label="GitHub Repository">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <h3 class="project-title">
+                                    <a href="https://campus-connect-sage-eta.vercel.app/" target="_blank" rel="noopener">Campus Connect — Paperless Event Management</a>
+                                </h3>
+
+                                <p class="project-desc">
+                                    Complete campus event hub eliminating physical ticketing with encrypted QR-based check-ins, automated participant attendance validation, and real-time organizer dashboards.
+                                </p>
+
+                                <div class="project-metric-pill">
+                                    <i class="fas fa-qrcode text-coral"></i>
+                                    <span>100% paperless QR attendance & organizer portal</span>
+                                </div>
+
+                                <div class="tech-tags">
+                                    <span>Full-Stack</span>
+                                    <span>QR Code Tech</span>
+                                    <span>MongoDB</span>
+                                    <span>Admin Panel</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 4: ToursIn -->
+                    <article class="project-card" data-category="ai fullstack">
+                        <div class="project-card-inner">
+                            <div class="project-media-wrapper">
+                                <img src="images/toursin (1).png" alt="ToursIn platform preview" loading="lazy" class="project-img">
+                                <div class="project-overlay">
+                                    <span class="badge-tag bg-tag-mint"><i class="fas fa-plane"></i> TravelTech • AI</span>
+                                    <span class="badge-tag bg-tag-green">Live Demo ↗</span>
+                                </div>
+                            </div>
+
+                            <div class="project-body">
+                                <div class="project-meta-row">
+                                    <span class="project-year">2026 • Travel Platform</span>
+                                    <div class="project-links">
+                                        <a href="https://toursin-frontend-x4f9.vercel.app/" target="_blank" rel="noopener" class="link-circle" title="Open Live Site" aria-label="Visit ToursIn">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <a href="https://github.com/8868kar" target="_blank" rel="noopener" class="link-circle" title="View Source on GitHub" aria-label="GitHub Repository">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <h3 class="project-title">
+                                    <a href="https://toursin-frontend-x4f9.vercel.app/" target="_blank" rel="noopener">ToursIn — AI-Powered Tourism & Itinerary Engine</a>
+                                </h3>
+
+                                <p class="project-desc">
+                                    Smart tourism exploration platform empowering travelers to discover exotic locations, generate custom day-by-day travel itineraries via AI, and book destination packages.
+                                </p>
+
+                                <div class="project-metric-pill">
+                                    <i class="fas fa-map-marked-alt text-green"></i>
+                                    <span>Dynamic itinerary generator & curated destination booking</span>
+                                </div>
+
+                                <div class="tech-tags">
+                                    <span>AI Engine</span>
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>Express</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 5: PetInfo -->
+                    <article class="project-card" data-category="fullstack">
+                        <div class="project-card-inner">
+                            <div class="project-media-wrapper">
+                                <img src="images/petinfo.png.png" alt="PetInfo preview" loading="lazy" class="project-img">
+                                <div class="project-overlay">
+                                    <span class="badge-tag bg-tag-coral"><i class="fas fa-paw"></i> PetCare • Marketplace</span>
+                                    <span class="badge-tag bg-tag-green">Live Demo ↗</span>
+                                </div>
+                            </div>
+
+                            <div class="project-body">
+                                <div class="project-meta-row">
+                                    <span class="project-year">2026 • Community</span>
+                                    <div class="project-links">
+                                        <a href="https://breedpehchan-psi.vercel.app" target="_blank" rel="noopener" class="link-circle" title="Open Live Site" aria-label="Visit PetInfo">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <a href="https://github.com/8868kar" target="_blank" rel="noopener" class="link-circle" title="View Source on GitHub" aria-label="GitHub Repository">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <h3 class="project-title">
+                                    <a href="https://breedpehchan-psi.vercel.app" target="_blank" rel="noopener">PetInfo — Breed Discovery & Hospital Finder</a>
+                                </h3>
+
+                                <p class="project-desc">
+                                    An all-in-one companion animal care platform integrating breed recognition, emergency veterinary clinic geolocation lookup, and a trusted community marketplace.
+                                </p>
+
+                                <div class="project-metric-pill">
+                                    <i class="fas fa-location-arrow text-yellow"></i>
+                                    <span>Geolocation-enabled veterinary hospital locator</span>
+                                </div>
+
+                                <div class="tech-tags">
+                                    <span>Geolocation API</span>
+                                    <span>React</span>
+                                    <span>Full-Stack</span>
+                                    <span>Database</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 6: AI Gym -->
+                    <article class="project-card" data-category="ai">
+                        <div class="project-card-inner">
+                            <div class="project-media-wrapper">
+                                <img src="images/aighym.png.png" alt="AI Gym preview" loading="lazy" class="project-img">
+                                <div class="project-overlay">
+                                    <span class="badge-tag bg-tag-sky"><i class="fas fa-dumbbell"></i> FitnessTech • 3D</span>
+                                    <span class="badge-tag bg-tag-green">Live Demo ↗</span>
+                                </div>
+                            </div>
+
+                            <div class="project-body">
+                                <div class="project-meta-row">
+                                    <span class="project-year">2026 • 3D Motion</span>
+                                    <div class="project-links">
+                                        <a href="https://ai-gym-tau.vercel.app" target="_blank" rel="noopener" class="link-circle" title="Open Live Site" aria-label="Visit AI Gym">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                        <a href="https://github.com/8868kar" target="_blank" rel="noopener" class="link-circle" title="View Source on GitHub" aria-label="GitHub Repository">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <h3 class="project-title">
+                                    <a href="https://ai-gym-tau.vercel.app" target="_blank" rel="noopener">AI Gym — 3D Exercise Coach & Regimen Generator</a>
+                                </h3>
+
+                                <p class="project-desc">
+                                    Next-gen fitness companion featuring personalized training regimens and realistic animated 3D exercise visualizations guiding users through correct biomechanical form.
+                                </p>
+
+                                <div class="project-metric-pill">
+                                    <i class="fas fa-cube text-blue"></i>
+                                    <span>3D motion biomechanics & automated workout regimens</span>
+                                </div>
+
+                                <div class="tech-tags">
+                                    <span>3D Visuals</span>
+                                    <span>AI Fitness</span>
+                                    <span>Full-Stack</span>
+                                    <span>Vercel</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
                 </div>
             </div>
+        </section>
 
-            <div class="projects-grid" id="projectsContainer">
-                <!-- Project 1: Vakeely AI -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/VAkeely-Ai legal.png.png" alt="Vakeely AI">
-                        <span class="project-badge">SaaS</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>Vakeely AI – AI-Powered Legal Research & Drafting Platform</h3>
-                        <p style="font-size: 0.85rem; margin-bottom: 0.5rem; color: var(--primary-color);">GenAI •
-                            LegalTech • SaaS Platform</p>
-                        <p>AI-powered legal platform for smart case research, judgment search, and legal document
-                            drafting, helping lawyers save time and improve productivity, and book slots with Lawyers.
-                        </p>
-                        <a href="https://vakeely-ai.vercel.app" target="_blank" class="project-link"><i
-                                class="fas fa-external-link-alt"></i></a>
-                    </div>
+        <!-- 5. TECH STACK & ARSENAL -->
+        <section id="stack" class="stack-section">
+            <div class="container">
+                <div class="sec-label center">
+                    <span class="kicker-tag"><i class="fas fa-terminal"></i> THE TOOLKIT</span>
+                    <h2 class="sec-title">Technologies I use to <span class="brush-hl hl-mint">craft & deploy</span>.</h2>
+                    <p class="sec-subtitle">A curated collection of languages, frameworks, and AI engines in my daily workflow.</p>
                 </div>
 
-                <!-- Project 2: ADHD Prediction System -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/adhd.png.png" alt="ADHD Prediction System">
-                        <span class="project-badge text-green">AI/ML</span>
+                <div class="stack-interactive-grid">
+                    <!-- Tool 1 -->
+                    <div class="stack-item" data-tool="Python" data-role="GenAI & Backend Logic" data-how="Building fast LLM orchestration pipelines, data preprocessing, and ML algorithms.">
+                        <div class="stack-icon-wrapper" style="--c:#3776AB"><i class="fab fa-python"></i></div>
+                        <span class="stack-name">Python</span>
+                        <span class="stack-type">GenAI & ML</span>
                     </div>
-                    <div class="project-info">
-                        <h3>ADHD Prediction System</h3>
-                        <p style="font-size: 0.85rem; margin-bottom: 0.5rem; color: var(--green);">AI/ML • Healthcare
-                        </p>
-                        <p>Built an AI-powered ADHD prediction platform that analyzes user data to identify potential
-                            ADHD patterns and generate predictive insights.</p>
-                        <a href="https://adhd-prediction-system.vercel.app" target="_blank" class="project-link"><i
-                                class="fas fa-external-link-alt"></i></a>
+
+                    <!-- Tool 2 -->
+                    <div class="stack-item" data-tool="JavaScript (ESNext)" data-role="Core Web Engine" data-how="Reactive client state, asynchronous event loops, and modern web platform APIs.">
+                        <div class="stack-icon-wrapper" style="--c:#F7DF1E; color:#000;"><i class="fab fa-js-square"></i></div>
+                        <span class="stack-name">JavaScript</span>
+                        <span class="stack-type">Core Web</span>
+                    </div>
+
+                    <!-- Tool 3 -->
+                    <div class="stack-item" data-tool="React.js" data-role="Frontend UI" data-how="Reusable component architecture, custom hooks, and dynamic interface rendering.">
+                        <div class="stack-icon-wrapper" style="--c:#61DAFB"><i class="fab fa-react"></i></div>
+                        <span class="stack-name">React</span>
+                        <span class="stack-type">Frontend</span>
+                    </div>
+
+                    <!-- Tool 4 -->
+                    <div class="stack-item" data-tool="Next.js" data-role="Full-Stack React" data-how="Server-side rendering, API routes, edge caching, and optimized SEO deployments.">
+                        <div class="stack-icon-wrapper" style="--c:#000000; color:#fff;"><i class="fas fa-feather-alt"></i></div>
+                        <span class="stack-name">Next.js</span>
+                        <span class="stack-type">Framework</span>
+                    </div>
+
+                    <!-- Tool 5 -->
+                    <div class="stack-item" data-tool="Node.js" data-role="Backend Runtime" data-how="Non-blocking event-driven architectures, RESTful services, and background workers.">
+                        <div class="stack-icon-wrapper" style="--c:#68A063"><i class="fab fa-node-js"></i></div>
+                        <span class="stack-name">Node.js</span>
+                        <span class="stack-type">Backend</span>
+                    </div>
+
+                    <!-- Tool 6 -->
+                    <div class="stack-item" data-tool="MongoDB" data-role="NoSQL Document DB" data-how="Schema design, aggregation pipelines, and high-throughput document storage.">
+                        <div class="stack-icon-wrapper" style="--c:#47A248"><i class="fas fa-leaf"></i></div>
+                        <span class="stack-name">MongoDB</span>
+                        <span class="stack-type">Database</span>
+                    </div>
+
+                    <!-- Tool 7 -->
+                    <div class="stack-item" data-tool="PostgreSQL" data-role="Relational Database" data-how="Strict schemas, relational integrity, ACID compliance, and complex join queries.">
+                        <div class="stack-icon-wrapper" style="--c:#336791"><i class="fas fa-database"></i></div>
+                        <span class="stack-name">PostgreSQL</span>
+                        <span class="stack-type">Database</span>
+                    </div>
+
+                    <!-- Tool 8 -->
+                    <div class="stack-item" data-tool="FastAPI" data-role="High-Speed Python APIs" data-how="Sub-millisecond serialization, automatic OpenAPI documentation, and async AI endpoints.">
+                        <div class="stack-icon-wrapper" style="--c:#059669"><i class="fas fa-bolt"></i></div>
+                        <span class="stack-name">FastAPI</span>
+                        <span class="stack-type">Backend</span>
+                    </div>
+
+                    <!-- Tool 9 -->
+                    <div class="stack-item" data-tool="OpenAI & Groq" data-role="LLM & Inference" data-how="Harnessing state-of-the-art models for document synthesis, classification, and chat.">
+                        <div class="stack-icon-wrapper" style="--c:#10A37F"><i class="fas fa-robot"></i></div>
+                        <span class="stack-name">OpenAI / Groq</span>
+                        <span class="stack-type">LLM Engines</span>
+                    </div>
+
+                    <!-- Tool 10 -->
+                    <div class="stack-item" data-tool="Tailwind CSS" data-role="Utility Styling" data-how="Rapid prototyping, fluid design tokens, and ultra-responsive modern typography.">
+                        <div class="stack-icon-wrapper" style="--c:#38B2AC"><i class="fab fa-css3-alt"></i></div>
+                        <span class="stack-name">Tailwind</span>
+                        <span class="stack-type">Styling</span>
+                    </div>
+
+                    <!-- Tool 11 -->
+                    <div class="stack-item" data-tool="Google OAuth & JWT" data-role="Authentication" data-how="Stateless token verification, Google Identity sign-in, and secured route guards.">
+                        <div class="stack-icon-wrapper" style="--c:#EA4335"><i class="fas fa-key"></i></div>
+                        <span class="stack-name">Auth Security</span>
+                        <span class="stack-type">Security</span>
+                    </div>
+
+                    <!-- Tool 12 -->
+                    <div class="stack-item" data-tool="Git & GitHub" data-role="Version Control & CI/CD" data-how="Collaborative branch management, semantic release workflows, and automated pipelines.">
+                        <div class="stack-icon-wrapper" style="--c:#F05032"><i class="fab fa-github"></i></div>
+                        <span class="stack-name">Git & CI/CD</span>
+                        <span class="stack-type">DevOps</span>
                     </div>
                 </div>
 
-                <!-- Project 3: Campus Connect -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/campus.png.png" alt="Campus Connect">
-                        <span class="project-badge text-purple">Full Stack</span>
+                <!-- Dynamic Inspector Tooltip Card -->
+                <div class="tool-detail-card" id="toolDetailCard">
+                    <div class="detail-header">
+                        <span class="detail-badge">TOOLKIT INSPECTOR</span>
+                        <span class="detail-hint">Hover or tap any technology above</span>
                     </div>
-                    <div class="project-info">
-                        <h3>Campus Connect</h3>
-                        <p style="font-size: 0.85rem; margin-bottom: 0.5rem; color: var(--primary-color);">Full Stack •
-                            Event Management • EdTech</p>
-                        <p>Paperless event management platform with event registration, QR-based attendance tracking,
-                            and an admin dashboard for complete event management.</p>
-                        <a href="https://campus-connect-sage-eta.vercel.app/" target="_blank" class="project-link"><i
-                                class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <!-- Project 4: ToursIn -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/toursin (1).png" alt="ToursIn">
-                        <span class="project-badge text-purple">TravelTech</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>ToursIn</h3>
-                        <p style="font-size: 0.85rem; margin-bottom: 0.5rem; color: var(--primary-color);">Full Stack •
-                            TravelTech • AI</p>
-                        <p>AI-powered tourism and travel booking platform where users can explore destinations, generate
-                            personalized itineraries, book travel packages, and manage journeys.</p>
-                        <a href="https://toursin-frontend-x4f9.vercel.app/" target="_blank" class="project-link"><i
-                                class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <!-- Project 5: PetInfo -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/petinfo.png.png" alt="PetInfo">
-                        <span class="project-badge text-purple">Full Stack</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>PetInfo</h3>
-                        <p style="font-size: 0.85rem; margin-bottom: 0.5rem; color: var(--primary-color);">Full Stack •
-                            API Integration • Pet Care</p>
-                        <p>An all-in-one pet platform offering breed information, nearby vet hospital discovery, and a
-                            marketplace for buying, selling, and managing pets seamlessly.</p>
-                        <a href="https://breedpehchan-psi.vercel.app" target="_blank" class="project-link"><i
-                                class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-                <!-- Project 6: AI Gym -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/aighym.png.png" alt="AI Gym">
-                        <span class="project-badge text-purple">AI</span>
-                    </div>
-                    <div class="project-info">
-                        <h3>AI Gym</h3>
-                        <p style="font-size: 0.85rem; margin-bottom: 0.5rem; color: var(--primary-color);">AI •
-                            FitnessTech • Full Stack</p>
-                        <p>A smart fitness platform featuring personalized workout plans and 3D exercise visualizations
-                            that guide users through each movement with realistic animated demonstrations for better
-                            training and form correction.</p>
-                        <a href="https://ai-gym-tau.vercel.app" target="_blank" class="project-link"><i
-                                class="fas fa-external-link-alt"></i></a>
+                    <div class="detail-content">
+                        <h4 id="detailTitle">Python</h4>
+                        <span class="detail-role" id="detailRole">GenAI & Backend Logic</span>
+                        <p id="detailDesc">Building fast LLM orchestration pipelines, data preprocessing, and ML algorithms.</p>
                     </div>
                 </div>
             </div>
-    </div>
-    </section>
+        </section>
 
-
-
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="contact section-padding">
-        <div class="contact-container">
-            <div class="contact-info">
-                <span class="section-tag text-primary">LET'S CONNECT</span>
-                <h2>Have a project in mind?</h2>
-                <p>Let's build something amazing together! Whether you have a project idea, a collaboration in mind, or
-                    just want to say hi — I'd love to hear from you.</p>
-
-                <div class="email-info"
-                    style="display: flex; flex-direction: column; gap: 0.8rem; margin-bottom: 2rem;">
-                    <div style="font-size: 1.1rem; color: var(--text-color);"><i class="fas fa-phone-alt"
-                            style="color: var(--primary-color); margin-right: 12px; font-size: 1.2rem;"></i> +91
-                        8868898265</div>
-                    <div style="font-size: 1.1rem; color: var(--text-color);"><i class="far fa-envelope"
-                            style="color: var(--primary-color); margin-right: 12px; font-size: 1.2rem;"></i>
-                        kartikkarnwal07@gmail.com</div>
+        <!-- 6. ACHIEVEMENTS & MILESTONES -->
+        <section id="achievements" class="achievements-section">
+            <div class="container">
+                <div class="sec-label">
+                    <span class="kicker-tag"><i class="fas fa-award"></i> MILESTONES & POSTS</span>
+                    <h2 class="sec-title">Milestones shared with the <span class="brush-hl hl-sky">community</span>.</h2>
+                    <p class="sec-subtitle">Updates, project launches, and highlights from my journey.</p>
                 </div>
 
-                <a href="CV_Kartik.pdf" download="Kartik_Karnwal_CV.pdf" class="btn btn-outline mt-3">Download CV <i class="fas fa-download"></i></a>
-            </div>
-
-            <div class="contact-form">
-                <form id="contactForm">
-                    <div class="form-row">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
+                <div class="achievements-cards-grid">
+                    <!-- Post 1 -->
+                    <div class="achievement-card">
+                        <div class="achievement-top">
+                            <span class="badge-tag bg-tag-sky"><i class="fab fa-linkedin"></i> LinkedIn Update</span>
+                            <a href="https://www.linkedin.com/in/kartik-karnwal07/" target="_blank" rel="noopener" class="post-direct-link">View Post ↗</a>
+                        </div>
+                        <div class="embed-wrapper">
+                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7444666064199753728" height="380" width="100%" frameborder="0" allowfullscreen="" title="Kartik Karnwal LinkedIn Post 1"></iframe>
+                        </div>
                     </div>
-                    <input type="text" placeholder="Subject" class="full-width" required>
-                    <textarea placeholder="Your Message" class="full-width" rows="5" required></textarea>
-                    <button type="submit" class="btn btn-primary full-width mt-3">Send Message <i
-                            class="fas fa-paper-plane"></i></button>
-                </form>
-            </div>
-        </div>
-    </section>
 
-    <!-- ACHIEVEMENTS SECTION -->
-    <section id="achievements" class="achievements section-padding">
-        <div class="section-header">
-            <span class="section-tag">MILESTONES & POSTS</span>
-            <h2>Achievements</h2>
-            <p style="margin-top: 1rem; color: var(--text-color);">Check out some of my latest updates and milestones.
-            </p>
-        </div>
+                    <!-- Post 2 -->
+                    <div class="achievement-card">
+                        <div class="achievement-top">
+                            <span class="badge-tag bg-tag-coral"><i class="fab fa-linkedin"></i> LinkedIn Update</span>
+                            <a href="https://www.linkedin.com/in/kartik-karnwal07/" target="_blank" rel="noopener" class="post-direct-link">View Post ↗</a>
+                        </div>
+                        <div class="embed-wrapper">
+                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7451100513611235328" height="380" width="100%" frameborder="0" allowfullscreen="" title="Kartik Karnwal LinkedIn Post 2"></iframe>
+                        </div>
+                    </div>
 
-        <div class="achievements-grid"
-            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; padding-bottom: 1rem;">
-            <!-- LinkedIn Post 1 -->
-            <div class="achievement-card"
-                style="flex: 0 0 600px; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7444666064199753728"
-                    height="400" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                    <!-- Post 3 -->
+                    <div class="achievement-card">
+                        <div class="achievement-top">
+                            <span class="badge-tag bg-tag-mint"><i class="fab fa-linkedin"></i> LinkedIn Update</span>
+                            <a href="https://www.linkedin.com/in/kartik-karnwal07/" target="_blank" rel="noopener" class="post-direct-link">View Post ↗</a>
+                        </div>
+                        <div class="embed-wrapper">
+                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7444055901298417664" height="380" width="100%" frameborder="0" allowfullscreen="" title="Kartik Karnwal LinkedIn Post 3"></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- LinkedIn Post 2 -->
-            <div class="achievement-card"
-                style="flex: 0 0 600px; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7451100513611235328"
-                    height="400" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        </section>
+
+        <!-- 7. INTERACTIVE VISITOR NOTES WALL (Like Aryan's site!) -->
+        <section id="notes" class="visitor-notes-section">
+            <div class="container">
+                <div class="sec-label center">
+                    <span class="kicker-tag"><i class="fas fa-sticky-note"></i> COMMUNITY WALL</span>
+                    <h2 class="sec-title">Leave a note on the <span class="brush-hl hl-sun">board</span>.</h2>
+                    <p class="sec-subtitle">Dropped by my portfolio? Leave your name, feedback, or say hi!</p>
+                </div>
+
+                <div class="visitor-board-wrapper">
+                    <!-- Notes submission form -->
+                    <form id="visitorNoteForm" class="visitor-form-card">
+                        <h4 class="handwritten-text">Post a quick sticker ✨</h4>
+                        <div class="form-row">
+                            <input type="text" id="visitorName" placeholder="Your Name or Handle" required maxlength="30">
+                            <select id="visitorEmoji" aria-label="Select mood emoji">
+                                <option value="⚡">⚡ Energized</option>
+                                <option value="🔥">🔥 Lit</option>
+                                <option value="🚀">🚀 Super Cool</option>
+                                <option value="💻">💻 Fellow Dev</option>
+                                <option value="✨">✨ Inspiring</option>
+                            </select>
+                        </div>
+                        <textarea id="visitorMessage" placeholder="Drop a thought or project vibe..." rows="2" required maxlength="140"></textarea>
+                        <button type="submit" class="btn btn-primary btn-sm full-width">
+                            <span>Pin to Wall</span>
+                            <i class="fas fa-thumbtack"></i>
+                        </button>
+                    </form>
+
+                    <!-- Interactive Notes Board -->
+                    <div class="notes-feed-grid" id="notesFeed">
+                        <!-- Default Seed Notes -->
+                        <div class="feed-note note-color-1">
+                            <div class="note-header">
+                                <b>Aman S.</b>
+                                <span>🚀 Dev</span>
+                            </div>
+                            <p>"Loved the Vakeely AI concept! Clean UI and great GenAI vision."</p>
+                        </div>
+
+                        <div class="feed-note note-color-2">
+                            <div class="note-header">
+                                <b>Priya M.</b>
+                                <span>✨ Founder</span>
+                            </div>
+                            <p>"Really impressive portfolio structure Kartik. Keep building!"</p>
+                        </div>
+
+                        <div class="feed-note note-color-3">
+                            <div class="note-header">
+                                <b>Rohan V.</b>
+                                <span>🔥 Recruiter</span>
+                            </div>
+                            <p>"Solid full-stack and AI project stack. Bookmarking this."</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- LinkedIn Post 3 -->
-            <div class="achievement-card"
-                style="flex: 0 0 600px; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7444055901298417664"
-                    height="400" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        </section>
+
+        <!-- 8. SAY HI / 3D KEYBOARD KEYS CONTACT SECTION -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="sec-label center">
+                    <span class="kicker-tag"><i class="fas fa-keyboard"></i> CONNECT WITH ME</span>
+                    <h2 class="sec-title">Have a project in mind? <span class="brush-hl hl-coral">Let's talk</span>.</h2>
+                    <p class="sec-subtitle">Whether you're looking for a Full-Stack GenAI developer, a freelance build, or just want to say hi!</p>
+                </div>
+
+                <!-- ARYAN GUPTA STYLE 3D KEYBOARD KEYS -->
+                <div class="keyboard-stage">
+                    <p class="keyboard-cue">
+                        <i class="fas fa-keyboard"></i>
+                        <span>Tap these keys or press </span>
+                        <kbd>M</kbd> <kbd>L</kbd> <kbd>G</kbd> <kbd>P</kbd>
+                        <span> on your keyboard:</span>
+                    </p>
+
+                    <div class="keys-grid">
+                        <!-- Key M: Mail -->
+                        <div class="key-wrapper">
+                            <button type="button" class="key-3d key-mail" id="keyMail" data-key="m" aria-label="Mail Kartik">
+                                <span class="key-cap">
+                                    <i class="key-letter">M</i>
+                                    <i class="fas fa-envelope key-icon"></i>
+                                </span>
+                            </button>
+                            <div class="key-note">
+                                <span class="key-action-label">Mail Me</span>
+                                <div class="copy-email-row">
+                                    <span class="email-address">kartikkarnwal07@gmail.com</span>
+                                    <button type="button" id="copyEmailBtn" class="copy-btn" title="Copy email address" aria-label="Copy email">
+                                        <i class="far fa-copy"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Key L: LinkedIn -->
+                        <div class="key-wrapper">
+                            <a href="https://www.linkedin.com/in/kartik-karnwal07/?skipRedirect=true" target="_blank" rel="noopener" class="key-3d key-linkedin" data-key="l" aria-label="LinkedIn profile">
+                                <span class="key-cap">
+                                    <i class="key-letter">L</i>
+                                    <i class="fab fa-linkedin key-icon"></i>
+                                </span>
+                            </a>
+                            <div class="key-note">
+                                <span class="key-action-label">LinkedIn</span>
+                                <small>Connect & Network ↗</small>
+                            </div>
+                        </div>
+
+                        <!-- Key G: GitHub -->
+                        <div class="key-wrapper">
+                            <a href="https://github.com/8868kar" target="_blank" rel="noopener" class="key-3d key-github" data-key="g" aria-label="GitHub profile">
+                                <span class="key-cap">
+                                    <i class="key-letter">G</i>
+                                    <i class="fab fa-github key-icon"></i>
+                                </span>
+                            </a>
+                            <div class="key-note">
+                                <span class="key-action-label">GitHub</span>
+                                <small>Repos & Commits ↗</small>
+                            </div>
+                        </div>
+
+                        <!-- Key P: Phone -->
+                        <div class="key-wrapper">
+                            <a href="tel:+918868898265" class="key-3d key-phone" data-key="p" aria-label="Call Kartik">
+                                <span class="key-cap">
+                                    <i class="key-letter">P</i>
+                                    <i class="fas fa-phone-alt key-icon"></i>
+                                </span>
+                            </a>
+                            <div class="key-note">
+                                <span class="key-action-label">Direct Call</span>
+                                <small>+91 8868898265</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DIRECT MESSAGE FORM -->
+                <div class="contact-card-box">
+                    <div class="contact-card-left">
+                        <div class="contact-profile-card">
+                            <img src="images/kartikimage.png" alt="Kartik Karnwal" class="contact-portrait">
+                            <div>
+                                <h3>Kartik Karnwal</h3>
+                                <p class="text-muted">Full-Stack GenAI Developer</p>
+                                <div class="location-badge"><i class="fas fa-map-marker-alt text-coral"></i> Indore / Open to Remote</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-quick-details">
+                            <div class="quick-detail-item">
+                                <i class="fas fa-check-circle text-green"></i>
+                                <div>
+                                    <b>Fast Response</b>
+                                    <small>Typically replies within 24 hours</small>
+                                </div>
+                            </div>
+                            <div class="quick-detail-item">
+                                <i class="fas fa-handshake text-blue"></i>
+                                <div>
+                                    <b>Open For</b>
+                                    <small>Full-time, Contract, & SaaS Builds</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-card-right">
+                        <form id="contactForm" class="contact-form-styled">
+                            <h3 class="form-title">Send a Direct Message</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="userName">Your Name</label>
+                                    <input type="text" id="userName" name="name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="userEmail">Your Email</label>
+                                    <input type="email" id="userEmail" name="email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="userSubject">Subject</label>
+                                <input type="text" id="userSubject" name="subject" placeholder="Project inquiry / Opportunity" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="userMessage">Message</label>
+                                <textarea id="userMessage" name="message" rows="4" placeholder="Tell me about your project, timeline, or idea..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary full-width submit-btn">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                            <p class="form-status" id="formStatus"></p>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+    </main>
 
     <!-- FOOTER -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 Kartik. All rights reserved.</p>
-            <p class="designed-with">Designed &amp; Built by <strong>Kartik</strong> <span class="text-red">❤</span></p>
-            <a href="#" class="back-to-top">Back to top <i class="fas fa-arrow-up"></i></a>
+    <footer class="footer-styled">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="footer-brand">Kartik Karnwal</span>
+                <p>Designed with curiosity & crafted with clean code. © 2026</p>
+            </div>
+            <div class="footer-center">
+                <div class="local-time-chip">
+                    <span class="live-clock-pulse"></span>
+                    <span>Local Time (IST): </span>
+                    <b id="liveClock">--:--</b>
+                </div>
+            </div>
+            <div class="footer-right">
+                <a href="#home" class="back-to-top-btn" aria-label="Back to top">
+                    <span>Back to top</span>
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
         </div>
     </footer>
 
-    </div>
+    <!-- FLOATING GLASS DOCK (Aryan Gupta style bottom floating navbar) -->
+    <nav class="bottom-dock" aria-label="Quick navigation">
+        <div class="dock-inner">
+            <a href="#home" class="dock-link active" data-tooltip="Home" aria-label="Home">
+                <img src="images/profile1.jpg.png" alt="Kartik" class="dock-avatar">
+            </a>
+            <div class="dock-divider"></div>
+            <a href="#story" class="dock-link" data-tooltip="Story" aria-label="My Story">
+                <i class="fas fa-book-open"></i>
+            </a>
+            <a href="#services" class="dock-link" data-tooltip="Services" aria-label="Services">
+                <i class="fas fa-cogs"></i>
+            </a>
+            <a href="#projects" class="dock-link" data-tooltip="Projects" aria-label="Projects">
+                <i class="fas fa-briefcase"></i>
+            </a>
+            <a href="#stack" class="dock-link" data-tooltip="Toolkit" aria-label="Tech Stack">
+                <i class="fas fa-terminal"></i>
+            </a>
+            <a href="#achievements" class="dock-link" data-tooltip="Milestones" aria-label="Milestones">
+                <i class="fas fa-award"></i>
+            </a>
+            <a href="#contact" class="dock-link" data-tooltip="Contact" aria-label="Contact">
+                <i class="fas fa-paper-plane"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- TOAST NOTIFICATION POPUP -->
+    <div id="toastNotification" class="toast-box" role="alert" aria-live="polite"></div>
 
     <script src="app.js"></script>
 </body>
